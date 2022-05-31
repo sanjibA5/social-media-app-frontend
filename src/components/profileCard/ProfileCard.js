@@ -26,11 +26,11 @@ const ProfileCard=() =>{
                 <div className={style.follow}>
                     <span>6</span>
                     <span>Follower</span>
-                </div>
-              
+                </div>              
             </div>
             <hr />
         </div>
+        <span>My Profile</span>
     </div>
   )
 }
