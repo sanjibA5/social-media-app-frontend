@@ -1,0 +1,16 @@
+.Home{
+    position: relative;
+    display: grid;
+    grid-template-columns: 18rem auto 20rem;
+    gap: 1rem;
+
+}
+.profileSide{
+    background-color: red;
+}
+.postside{
+    background-color: aqua;
+}
+.rightSide{
+    background-color: black;
+}
