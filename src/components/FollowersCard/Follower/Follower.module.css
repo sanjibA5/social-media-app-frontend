@@ -26,3 +26,25 @@
 .name>span:nth-of-type(1){
     font-weight: bold;
 }
+.follower>button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--buttonBg);
+    transition: all 100ms ease-out;
+    height: 2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+      
+}
+
+.follower>button:hover{
+    cursor: pointer;
+    color: rgb(236, 180, 76);
+    background: transparent;
+    border: 2px solid orange;
+
+}
