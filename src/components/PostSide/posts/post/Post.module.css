@@ -1,9 +1,25 @@
 .post{
+display: flex;
+flex-direction: column;
+padding: 1em;
+background-color: var(--cardColor);
+border-radius: 1rem;
+gap: 1rem;
+
+}
+.post>img{
+    width: 100%;
+    min-height: 20rem;
+    object-fit: cover;
+    border-radius: 0.5rem;
 
 }
 .postReaction{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
 
 }
-.descriptions{
+/* .descriptions{
     
-}
+} */

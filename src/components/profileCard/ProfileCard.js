@@ -3,6 +3,7 @@ import style from './ProfileCard.module.css'
 import cover from '../../img/cover.jpg'
 import profile from '../../img/profileImg.jpg'
 const ProfileCard=() =>{
+    let isUserProfile=true
   return (
     <div className={style.profileCard}>
         <div className={style.profileimages}>
@@ -26,11 +27,27 @@ const ProfileCard=() =>{
                 <div className={style.follow}>
                     <span>6</span>
                     <span>Follower</span>
-                </div>              
+                </div> 
+                {
+                    isUserProfile?(
+                        <>
+                    <div className={style.vl}> <hr /> </div>
+                    <div className={style.follow}>
+                        <span>3</span>
+                        <span>Posts</span>
+                    </div> 
+                    </>
+                    ):''
+                    
+                }             
+             
             </div>
             <hr />
         </div>
-        <span>My Profile</span>
+        {
+            isUserProfile?'':<span>My Profile</span>
+        }
+        
     </div>
   )
 }
