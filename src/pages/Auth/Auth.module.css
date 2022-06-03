@@ -1,0 +1,39 @@
+.Auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 4rem;
+    position: relative;
+}
+.Auth>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* left side */
+.a-left {
+gap: 2rem;
+}
+.a-left>img{
+    width: 4rem;
+    height: 4rem;
+}
+.brandName>h1{
+    font-size: 3rem;
+    background-color: red;
+    /* create gradint */
+    background-image: var(--buttonBg);
+/* Set background size and reapet proprty */
+background-size: 100%;
+background-repeat: repeat;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+-moz-background-clip: text;
+-moz-text-fill-color: transparent;
+}
+.brandName>h6{
+    font-size: 0.85rem;
+}
+

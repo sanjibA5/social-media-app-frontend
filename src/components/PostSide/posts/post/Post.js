@@ -7,7 +7,7 @@ import share from '../../../../img/share.png'
 import comment from '../../../../img/comment.png'
 
 const Post = (props) => {
-    console.log(props.data);
+    // console.log(props.data);
   return (
     <div className={style.post}>
       <img src={props.data.image} alt="" />

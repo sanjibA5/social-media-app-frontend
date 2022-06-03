@@ -1,0 +1,26 @@
+.infoform{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    padding: 1rem;
+     
+}
+
+.infoform>div{
+    display: flex;
+    gap: 1rem;
+    height: 2rem;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+.signupbtn{
+    width: 6rem;
+    height: 2rem;
+    align-self: flex-end;
+}
