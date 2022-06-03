@@ -25,6 +25,3 @@ export default function Profile() {
         </div>
     )
 }
-{/* <div>
-<ProfileUser />
-</div> */}

@@ -14,6 +14,7 @@ const UserCardInfo = () => {
 
                 <UilPen width='2rem' height='1.2rem' onClick={()=>setIsOpenModal(true)}/>
                 <ProfileModal modalOpen={isOpenModal} setModalOpen={setIsOpenModal}/>
+                
                 </div>
                 <div className="info">
                     <span><b>Status : </b></span>

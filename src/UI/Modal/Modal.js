@@ -1,7 +1,6 @@
 import { Modal, useMantineTheme } from '@mantine/core';
-import style from '../../components/Signup/Signup.module.css'
 import Form from '../Form/Form';
-import Input from '../Input/Input'
+
 // this is profile user info show modal
 const formInputdata = [
     {
@@ -18,7 +17,7 @@ const formInputdata = [
     },
     {
         name: "livesin",
-        placeholder: "Change Livesin",
+        placeholder: "Change City",
         type: "text",
 
     },
@@ -28,6 +27,18 @@ const formInputdata = [
         type: "text",
 
     },
+    {
+        name: "profileImage",
+        placeholder: "Profile Image",
+        type: "file",
+
+    },
+    {
+        name: "coverImage",
+        placeholder: "Profile Image",
+        type: "file",
+
+    },
 
 ]
 
@@ -35,14 +46,20 @@ function ProfileModal({ modalOpen, setModalOpen }) {
     const theme = useMantineTheme();
 
     return (
-        <Modal
+        <Modal 
             overlayColor={theme.colorScheme === 'dark' ? theme.colors.dark[9] : theme.colors.gray[2]}
             overlayOpacity={0.55}
             overlayBlur={3}
+            
             opened={modalOpen}
             onClose={() => { setModalOpen(false) }}
         >
-            <Form formInputdata={formInputdata}/>
+            <Form
+                formInputdata={formInputdata}
+                formh3={"Update Your Information"}
+                btnText={"Update"}
+                formSpanText={""}
+            />
         </Modal>
     );
 }
